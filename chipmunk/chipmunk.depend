@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1458158855 source:c:\users\morris\documents\github\chipmunk\chipmunk\main.cpp
+	"geom.h"
+
+1458166096 source:c:\users\morris\documents\github\chipmunk\chipmunk\geom.cpp
+	"geom.h"
+
+1458166064 c:\users\morris\documents\github\chipmunk\chipmunk\geom.h
+

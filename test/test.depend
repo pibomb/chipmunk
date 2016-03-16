@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1458166040 source:c:\users\morris\documents\github\chipmunk\test\main.cpp
+	<iostream>
+	"geom.h"
+
