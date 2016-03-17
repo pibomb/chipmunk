@@ -1,10 +1,11 @@
 #include <iostream>
 
 #include "geom.h"
+#include "algebra.h"
 
 using namespace std;
 
-int main() {
+void test_geom() {
 	cout << "Testing: geom" << endl;
 	cout << endl;
 	cout << "Dot Product" << endl;
@@ -19,6 +20,31 @@ int main() {
 	cout << "dist(3, 4) = " << chipmunk::dist(3, 4) << endl;
 	cout << "dist((3, 4), (5, 2)) = " << chipmunk::dist(make_pair(3, 4), make_pair(5, 2)) << endl;
 	cout << "dist(3, 4, 5, 2) = " << chipmunk::dist(3, 4, 5, 2) << endl;
+	cout << endl;
+}
+
+void test_algebra() {
+	cout << "Testing: algebra" << endl;
+	cout << endl;
+	cout << "isPrime(2) " << chipmunk::isPrime(2) << endl;
+	cout << "isPrime(4) " << chipmunk::isPrime(4) << endl;
+	cout << "isPrime(21) " << chipmunk::isPrime(21) << endl;
+	cout << "isPrime(91) " << chipmunk::isPrime(91) << endl;
+	cout << endl;
+	cout << "Prime Sieve to 500" << endl;
+	chipmunk::PrimeSieve ps(500);
+    vector<int> primes = ps.getPrimes();
+    for(int p : primes)
+    	cout << p << " ";
+	cout << endl;
+	cout << "GCD(24, 42) = " << chipmunk::gcd(24, 42) << endl;
+	cout << "LCM(15, 9) = " << chipmunk::lcm(15, 9) << endl;
+	cout << endl;
+}
+
+int main() {
+	test_geom();
+	test_algebra();
 
 	return 0;
 }
