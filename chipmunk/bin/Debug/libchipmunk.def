@@ -1,2 +1,3 @@
 EXPORTS
-    _Z3Addii @1
+    _ZN8chipmunk4distESt4pairIddES1_ @1
+    _ZN8chipmunk4distEdddd @2

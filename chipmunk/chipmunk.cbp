@@ -38,7 +38,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="geom.cpp" />
+		<Unit filename="geom.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
