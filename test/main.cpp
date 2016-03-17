@@ -40,6 +40,9 @@ void test_algebra() {
 	cout << "GCD(24, 42) = " << chipmunk::gcd(24, 42) << endl;
 	cout << "LCM(15, 9) = " << chipmunk::lcm(15, 9) << endl;
 	cout << endl;
+	cout << "mod(25, 3) = " << chipmunk::mod(25, 3) << endl;
+	cout << "LCM(-25, 3) = " << chipmunk::mod(-25, 3) << endl;
+	cout << endl;
 }
 
 int main() {

@@ -23,4 +23,7 @@ namespace chipmunk {
 	int gcd(int a, int b);
 	// Least Common Multiple
 	int lcm(int a, int b);
+
+	// Mod operator including negative values
+	int mod(int a, int b);
 }

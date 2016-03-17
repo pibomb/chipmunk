@@ -66,3 +66,7 @@ int chipmunk::gcd(int a, int b) {
 int chipmunk::lcm(int a, int b) {
 	return b*a/gcd(a, b);
 }
+
+int chipmunk::mod(int a, int b) {
+	return (a < 0) ? (b+(a%b)) : (a%b);
+}

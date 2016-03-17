@@ -10,11 +10,12 @@
 1458189644 c:\users\morris\documents\github\chipmunk\chipmunk\geom.h
 	<utility>
 
-1458258341 source:c:\users\morris\documents\github\chipmunk\chipmunk\algebra.cpp
+1458260824 source:c:\users\morris\documents\github\chipmunk\chipmunk\algebra.cpp
+	<cassert>
 	<cmath>
 	<vector>
 	"algebra.h"
 
-1458258348 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
+1458260686 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
 	<vector>
 
