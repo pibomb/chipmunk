@@ -26,4 +26,14 @@ namespace chipmunk {
 
 	// Mod operator including negative values
 	int mod(int a, int b);
+
+	// Computes the factorial
+	unsigned long long factorial(int n);
+	// Computes factorial division of n!/d!
+	unsigned long long factorialDiv(int n, int d);
+
+	// Computes combinations
+	unsigned long long nCr(int n, int r);
+	// Computes permutations
+	unsigned long long nPr(int n, int r);
 }

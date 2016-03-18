@@ -43,6 +43,11 @@ void test_algebra() {
 	cout << "mod(25, 3) = " << chipmunk::mod(25, 3) << endl;
 	cout << "LCM(-25, 3) = " << chipmunk::mod(-25, 3) << endl;
 	cout << endl;
+	cout << "10! = " << chipmunk::factorial(10) << endl;
+	cout << "100!/96! = " << chipmunk::factorialDiv(100, 96) << endl;
+	cout << "16C4 = " << chipmunk::nCr(16, 4) << endl;
+	cout << "16P4 = " << chipmunk::nPr(16, 4) << endl;
+	cout << endl;
 }
 
 int main() {

@@ -70,3 +70,22 @@ int chipmunk::lcm(int a, int b) {
 int chipmunk::mod(int a, int b) {
 	return (a < 0) ? (b+(a%b)) : (a%b);
 }
+
+unsigned long long chipmunk::factorial(int n) {
+	return factorialDiv(n, 0);
+}
+
+unsigned long long chipmunk::factorialDiv(int n, int d) {
+	unsigned long long ans = 1;
+	for(int i = n; i > d; i--)
+		ans *= i;
+	return ans;
+}
+
+unsigned long long chipmunk::nCr(int n, int r) {
+	return nPr(n, r) / factorial(r);
+}
+
+unsigned long long chipmunk::nPr(int n, int r) {
+	return factorialDiv(n, n-r);
+}
