@@ -38,6 +38,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="algebra.cpp" />
+		<Unit filename="algebra.h" />
 		<Unit filename="geom.cpp" />
 		<Unit filename="geom.h" />
 		<Extensions>
