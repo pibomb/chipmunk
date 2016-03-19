@@ -18,5 +18,12 @@ namespace chipmunk {
 		void assign(int idx, int val);
 		// Scale the tree by a factor
 		void scale(int c);
+		// Find index of a certain cumulative frequency
+		int find(int cumFre);
+		// Find greatest index with a certain cumulative frequency
+		int findG(int cumFre);
 	};
+
+	// Generates a bitmask with a number's greatest bit
+	int greatestBit(int num);
 }
