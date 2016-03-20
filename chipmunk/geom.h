@@ -1,4 +1,5 @@
 #include <utility>
+#include <vector>
 
 namespace chipmunk {
 	// Computes the dot product of two 2D vectors
@@ -22,7 +23,7 @@ namespace chipmunk {
 	// Distance between two points
 	double dist(std::pair<double, double> p1, std::pair<double, double> p2 = std::make_pair(0, 0));
 	double dist(double x1, double y1, double x2 = 0, double y2 = 0);
-	
+
 	// Area of a polygon
-	double area(std::vector<std::pair<int, int>> points);
+	double area(std::vector<std::pair<int, int> > points);
 }
