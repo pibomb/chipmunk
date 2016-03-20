@@ -18,6 +18,6 @@ double chipmunk::area(std::vector<std::pair<int, int>> points) {
         area += points[i].first * points[i + 1 % points.size()].second;
         area -= points[i].second * points[i + 1 % points.size()].first;
     }
-    area *= 1 / 2;
+    area /=  2;
     return std::abs(area);
 }
