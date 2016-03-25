@@ -40,6 +40,8 @@
 		</Compiler>
 		<Unit filename="algebra.cpp" />
 		<Unit filename="algebra.h" />
+		<Unit filename="bit.cpp" />
+		<Unit filename="bit.h" />
 		<Unit filename="geom.cpp" />
 		<Unit filename="geom.h" />
 		<Extensions>

@@ -2,20 +2,35 @@
 1458167746 source:c:\users\morris\documents\github\chipmunk\chipmunk\main.cpp
 	"geom.h"
 
-1458189603 source:c:\users\morris\documents\github\chipmunk\chipmunk\geom.cpp
+1458928699 source:c:\users\morris\documents\github\chipmunk\chipmunk\geom.cpp
 	"geom.h"
 	<cmath>
 	<utility>
 
-1458189644 c:\users\morris\documents\github\chipmunk\chipmunk\geom.h
+1458928699 c:\users\morris\documents\github\chipmunk\chipmunk\geom.h
 	<utility>
+	<vector>
 
-1458266383 source:c:\users\morris\documents\github\chipmunk\chipmunk\algebra.cpp
+1458928696 source:c:\users\morris\documents\github\chipmunk\chipmunk\algebra.cpp
 	<cassert>
 	<cmath>
 	<vector>
 	"algebra.h"
 
-1458266191 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
+1458928696 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
+	<vector>
+
+1458928697 source:c:\users\morris\documents\github\chipmunk\chipmunk\bit.cpp
+	<vector>
+	"bit.h"
+
+1458928697 c:\users\morris\documents\github\chipmunk\chipmunk\bit.h
+	<vector>
+
+1458933502 source:c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.cpp
+	<cassert>
+	"directedgraph.h"
+
+1458933455 c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.h
 	<vector>
 
