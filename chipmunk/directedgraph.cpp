@@ -24,6 +24,10 @@ void chipmunk::DirectedGraph::bfs(int start, int finish, status& stat) {
 	for(int i = 0; i < NODES; i++)
 		visited[i] = false;
 
+	int pred[NODES];
+	pred[start] = -1;
+
+	int depth = 0;
 	queue<int> q;
 	q.push(start);
 
@@ -31,6 +35,19 @@ void chipmunk::DirectedGraph::bfs(int start, int finish, status& stat) {
 		int x = q.top();
 		q.pop();
 
+		if(x == finish)
+			break;
 
+		int s = edges[x].size();
+
+		for(int i = 0; i < s; i++) {
+			int y = edges[x].to;
+			if(!visited[y]) {
+				q.push(y);
+				pred[y] = x;
+			}
+		}
+
+		depth++;
 	}
 }
