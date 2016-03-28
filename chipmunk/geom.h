@@ -30,4 +30,6 @@ namespace chipmunk {
 
 	// Area of a polygon
 	double area(std::vector<std::pair<int, int> > points);
+	// Perimeter of a polygon
+	double perimeter(std::vector<std::pair<int, int> > points);
 }
