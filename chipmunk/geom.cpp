@@ -29,3 +29,14 @@ double chipmunk::area(std::vector<std::pair<int, int> > points) {
     area /= 2;
     return std::abs(area);
 }
+
+double chipmunk::perimeter(std::vector<std::pair<int, int> > points) {
+    double perim = 0;
+    int size = points.size();
+    for(int i = 0; i < size; i++)
+    {
+        perim += dist(points[i], points[(i + 1) % size]);
+    }
+
+    return perim;
+}
