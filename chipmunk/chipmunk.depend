@@ -11,26 +11,27 @@
 	<utility>
 	<vector>
 
-1458928696 source:c:\users\morris\documents\github\chipmunk\chipmunk\algebra.cpp
+1459187825 source:c:\users\morris\documents\github\chipmunk\chipmunk\algebra.cpp
 	<cassert>
 	<cmath>
 	<vector>
 	"algebra.h"
 
-1458928696 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
+1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
 	<vector>
 
-1458928697 source:c:\users\morris\documents\github\chipmunk\chipmunk\bit.cpp
+1459187825 source:c:\users\morris\documents\github\chipmunk\chipmunk\bit.cpp
 	<vector>
 	"bit.h"
 
-1458928697 c:\users\morris\documents\github\chipmunk\chipmunk\bit.h
+1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\bit.h
 	<vector>
 
-1458933502 source:c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.cpp
+1459187825 source:c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.cpp
 	<cassert>
+	<queue>
 	"directedgraph.h"
 
-1458933455 c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.h
+1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.h
 	<vector>
 
