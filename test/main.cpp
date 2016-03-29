@@ -55,12 +55,7 @@ int main() {
 	test_geom();
 	test_algebra();
 
-	chipmunk::BIT b(5);
-	for(int i = 1; i <= b.size(); i++) {
-		b.update(i,i);
-		cout << b.at(i) << " ";
-	}
-	cout << endl;
+	chipmunk::RURQ_BIT b(5);
 
 	b.update(1, 3, 100);
 	for(int i = 1; i <= b.size(); i++) {
