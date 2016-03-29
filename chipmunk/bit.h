@@ -12,10 +12,14 @@ namespace chipmunk {
 		BIT(int N);
 		// Get the frequency at a certain index
 		int at(int idx);
+		// Set the size of the tree
+		int size();
 		// Sum of frequencies up to idx
 		int sum(int idx);
-		// Assign a value at a certain index
-		void assign(int idx, int val);
+		// Add a value at a certain index
+		void update(int idx, int val);
+		// Add a value at a certain index rnage
+		void update(int idx1, int idx2, int val);
 		// Scale the tree by a factor
 		void scale(int c);
 		// Find index of a certain cumulative frequency

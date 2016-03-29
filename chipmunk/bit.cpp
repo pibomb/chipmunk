@@ -20,6 +20,10 @@ int chipmunk::BIT::at(int idx) {
 	return sum;
 }
 
+int chipmunk::BIT::size() {
+	return SIZE;
+}
+
 int chipmunk::BIT::sum(int idx) {
 	int sum = 0;
 	while(idx > 0) {
@@ -29,11 +33,16 @@ int chipmunk::BIT::sum(int idx) {
 	return sum;
 }
 
-void chipmunk::BIT::assign(int idx, int val) {
-	while(idx <= MaxVal) {
+void chipmunk::BIT::update(int idx, int val) {
+	while(idx <= SIZE) {
         tree[idx] += val;
         idx += (idx & -idx);
     }
+}
+
+void chipmunk::BIT::update(int idx1, int idx2, int val) {
+	update(idx1, val);
+	update(idx2 + 1, -val);
 }
 
 void chipmunk::BIT::scale(int c) {
@@ -45,7 +54,7 @@ int chipmunk::BIT::find(int cumFre) {
 	int bitMask = chipmunk::greatestBit(SIZE);
 	int idx = 0; // this var is result of function
 
-    while((bitMask != 0) && (idx < MaxVal)){ // nobody likes overflow :)
+    while((bitMask != 0) && (idx < SIZE)){ // nobody likes overflow :)
         int tIdx = idx + bitMask; // we make midpoint of interval
         if (cumFre == tree[tIdx]) // if it is equal, we just return idx
             return tIdx;
@@ -63,11 +72,11 @@ int chipmunk::BIT::find(int cumFre) {
         return idx;
 }
 
-int chipmunk::findG(int cumFre){
+int chipmunk::BIT::findG(int cumFre){
     int bitMask = chipmunk::greatestBit(SIZE);
     int idx = 0;
 
-    while ((bitMask != 0) && (idx < MaxVal)){
+    while ((bitMask != 0) && (idx < SIZE)){
         int tIdx = idx + bitMask;
         if (cumFre >= tree[tIdx]){
                 // if current cumulative frequency is equal to cumFre,

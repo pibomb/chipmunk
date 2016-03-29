@@ -42,6 +42,8 @@
 		<Unit filename="algebra.h" />
 		<Unit filename="bit.cpp" />
 		<Unit filename="bit.h" />
+		<Unit filename="boxunion.cpp" />
+		<Unit filename="boxunion.h" />
 		<Unit filename="directedgraph.cpp" />
 		<Unit filename="directedgraph.h" />
 		<Unit filename="geom.cpp" />
