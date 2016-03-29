@@ -55,7 +55,7 @@ int main() {
 	test_geom();
 	test_algebra();
 
-	chipmunk::RURQ_BIT b(5);
+	chipmunk::RUPQ_BIT b(5);
 
 	b.update(1, 3, 100);
 	for(int i = 1; i <= b.size(); i++) {
