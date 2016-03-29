@@ -1,13 +1,14 @@
 # depslib dependency file v1.0
-1458167746 source:c:\users\morris\documents\github\chipmunk\chipmunk\main.cpp
-	"geom.h"
+1459205960 source:c:\users\morris\documents\github\chipmunk\chipmunk\main.cpp
+	<iostream>
+	"bit.h"
 
-1458928699 source:c:\users\morris\documents\github\chipmunk\chipmunk\geom.cpp
+1459189901 source:c:\users\morris\documents\github\chipmunk\chipmunk\geom.cpp
 	"geom.h"
 	<cmath>
 	<utility>
 
-1458928699 c:\users\morris\documents\github\chipmunk\chipmunk\geom.h
+1459189350 c:\users\morris\documents\github\chipmunk\chipmunk\geom.h
 	<utility>
 	<vector>
 
@@ -20,11 +21,11 @@
 1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\algebra.h
 	<vector>
 
-1459187825 source:c:\users\morris\documents\github\chipmunk\chipmunk\bit.cpp
+1459209291 source:c:\users\morris\documents\github\chipmunk\chipmunk\bit.cpp
 	<vector>
 	"bit.h"
 
-1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\bit.h
+1459209243 c:\users\morris\documents\github\chipmunk\chipmunk\bit.h
 	<vector>
 
 1459187825 source:c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.cpp
@@ -33,5 +34,16 @@
 	"directedgraph.h"
 
 1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\directedgraph.h
+	<vector>
+
+1459205685 source:c:\users\morris\documents\github\chipmunk\chipmunk\boxunion.cpp
+	"boxunion.h"
+	<algorithm>
+	<cmath>
+	<cstring>
+	<set>
+	<unordered_map>
+
+1459202372 c:\users\morris\documents\github\chipmunk\chipmunk\boxunion.h
 	<vector>
 

@@ -2,6 +2,7 @@
 
 #include "geom.h"
 #include "algebra.h"
+#include "bit.h"
 
 using namespace std;
 
@@ -54,5 +55,15 @@ int main() {
 	test_geom();
 	test_algebra();
 
+	chipmunk::RUPQ_BIT b(5);
+
+	b.update(1, 3, 100);
+	for(int i = 1; i <= b.size(); i++) {
+		cout << b.at(i) << " ";
+	}
+	cout << endl;
+
 	return 0;
 }
+
+
