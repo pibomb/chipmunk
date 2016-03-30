@@ -6,6 +6,8 @@
 #include <set>
 #include <unordered_map>
 
+#include "bit.h"
+
 // Stuct for a line events for line sweep
 struct line {
 	int x, y1, y2, dir;
@@ -48,10 +50,22 @@ long long chipmunk::union_area(std::vector<chipmunk::Rectangle> rects) {
 	}
 
 	// The sweeping line
-	int yaxis[y.size()-1];
-	memset(yaxis, 0, y.size()-1);
+	chipmunk::RUPQ_BIT yaxis(y.size()-1);
+	yaxis.update(yindex[lines[0].y1]+1, yindex[lines[0].y2]+1, lines[0].dir);
 
-	// TODO
+	for(int i = 1; i < lines.size(); i++) {
+		for(int j = 1; j <= yaxis.size(); j++) {
+			if(yaxis.at(j) > 0) {
+				std::set<int>::iterator iter1 = y.begin();
+				std::set<int>::iterator iter2 = y.begin();
+				std::advance(iter1, j-1);
+				std::advance(iter2, j);
+				ans += (lines[i].x - lines[i-1].x) * (*iter2 - *iter1);
+			}
+		}
+
+		yaxis.update(yindex[lines[i].y1]+1, yindex[lines[i].y2]+1, lines[i].dir);
+	}
 
 	return ans;
 }
