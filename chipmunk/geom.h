@@ -32,4 +32,8 @@ namespace chipmunk {
 	double area(std::vector<std::pair<int, int> > points);
 	// Perimeter of a polygon
 	double perimeter(std::vector<std::pair<int, int> > points);
+
+	// Checks whether a point is inside a polygon
+    bool in_poly(std::vector<std::pair<double, double> > points, std::pair<double, double> test);
+    bool in_poly(std::vector<double> vertx, std::vector<double> verty, double pointx, double pointy);
 }
