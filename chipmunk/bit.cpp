@@ -4,7 +4,7 @@
 
 chipmunk::PURQ_BIT::PURQ_BIT(int N) {
 	SIZE = N;
-	tree = std::vector<int>(N);
+	tree = std::vector<int>(N+1);
 }
 
 int chipmunk::PURQ_BIT::at(int idx) {
@@ -96,7 +96,7 @@ int chipmunk::PURQ_BIT::findG(int cumFre){
 
 chipmunk::RUPQ_BIT::RUPQ_BIT(int N) {
 	SIZE = N;
-	tree = std::vector<int>(N);
+	tree = std::vector<int>(N+1);
 }
 
 int chipmunk::RUPQ_BIT::at(int idx) {
@@ -139,8 +139,8 @@ void chipmunk::RUPQ_BIT::update(int idx1, int idx2, int val) {
 
 chipmunk::RURQ_BIT::RURQ_BIT(int N) {
 	SIZE = N;
-	tree[0] = std::vector<int>(N);
-	tree[1] = std::vector<int>(N);
+	tree[0] = std::vector<int>(N+1);
+	tree[1] = std::vector<int>(N+1);
 }
 
 int chipmunk::RURQ_BIT::size() {

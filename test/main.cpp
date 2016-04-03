@@ -3,6 +3,7 @@
 #include "geom.h"
 #include "algebra.h"
 #include "bit.h"
+#include "boxunion.h"
 
 using namespace std;
 
@@ -51,17 +52,45 @@ void test_algebra() {
 	cout << endl;
 }
 
-int main() {
-	test_geom();
-	test_algebra();
+void test_bit() {
+	cout << "Testing: bit" << endl;
+	cout << endl;
 
+	cout << "Initializing RUPQ BIT" << endl;
 	chipmunk::RUPQ_BIT b(5);
 
+    cout << "update(1, 3, 100)" << endl;
 	b.update(1, 3, 100);
+	cout << "update(2, 4, 22)" << endl;
+	b.update(2, 4, 2);
+
 	for(int i = 1; i <= b.size(); i++) {
 		cout << b.at(i) << " ";
 	}
 	cout << endl;
+}
+
+void test_boxunion() {
+	cout << "Testing: boxunion" << endl;
+	cout << endl;
+
+	cout << "Using rectangles:" << endl;
+	vector<chipmunk::Rectangle> rects;
+	cout << "(0, 0) , (5, 5)" << endl;
+	rects.push_back(make_pair(make_pair(0, 0), make_pair(5, 5)));
+	cout << "(4, 4) , (6, 6)" << endl;
+	rects.push_back(make_pair(make_pair(4, 4), make_pair(6, 6)));
+	cout << "(5, 5) , (6, 7)" << endl;
+	rects.push_back(make_pair(make_pair(5, 5), make_pair(6, 7)));
+
+	cout << chipmunk::union_area(rects) << endl;
+}
+
+int main() {
+	//test_geom();
+	//test_algebra();
+	//test_bit();
+	test_boxunion();
 
 	return 0;
 }

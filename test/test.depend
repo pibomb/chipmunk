@@ -1,7 +1,21 @@
 # depslib dependency file v1.0
-1459216794 source:c:\users\morris\documents\github\chipmunk\test\main.cpp
+1459699020 source:c:\users\morris\documents\github\chipmunk\test\main.cpp
 	<iostream>
 	"geom.h"
 	"algebra.h"
 	"bit.h"
+	"boxunion.h"
+
+1459691945 c:\users\morris\documents\github\chipmunk\chipmunk\\geom.h
+	<utility>
+	<vector>
+
+1459187825 c:\users\morris\documents\github\chipmunk\chipmunk\\algebra.h
+	<vector>
+
+1459218972 c:\users\morris\documents\github\chipmunk\chipmunk\\bit.h
+	<vector>
+
+1459202372 c:\users\morris\documents\github\chipmunk\chipmunk\\boxunion.h
+	<vector>
 
