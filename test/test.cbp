@@ -14,14 +14,14 @@
 				<Compiler>
 					<Add option="-std=c++11" />
 					<Add option="-g" />
-					<Add directory="../chipmunk/bin/Debug" />
+					<Add directory="../chipmunk/" />
 				</Compiler>
 				<ResourceCompiler>
 					<Add directory="../chipmunk/bin/Debug" />
 				</ResourceCompiler>
 				<Linker>
 					<Add library="../chipmunk/bin/Debug/libchipmunk.a" />
-					<Add directory="../chipmunk/bin/Debug" />
+					<Add directory="../chipmunk/" />
 				</Linker>
 			</Target>
 			<Target title="Release">
