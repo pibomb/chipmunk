@@ -48,6 +48,7 @@
 		<Unit filename="directedgraph.h" />
 		<Unit filename="geom.cpp" />
 		<Unit filename="geom.h" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
