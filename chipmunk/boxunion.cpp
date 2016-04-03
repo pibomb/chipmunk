@@ -35,7 +35,7 @@ long long chipmunk::union_area(std::vector<chipmunk::Rectangle> rects) {
 		y.insert(y1);
 		y.insert(y2);
 		lines.push_back(line(x1, std::min(y1, y2), std::max(y1, y2), 1));
-		lines.push_back(line(x1, std::min(y1, y2), std::max(y1, y2), -1));
+		lines.push_back(line(x2, std::min(y1, y2), std::max(y1, y2), -1));
 	}
 
 	// Sort the vertical line segments
